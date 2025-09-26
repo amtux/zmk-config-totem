@@ -128,7 +128,7 @@ label= "SYM"                               ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   LAST    ┃   VOL-    ┃   VOL+    ┃   NEXT    ┃ PLAY/PAUSE┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    ADJ    ┃    GIF    ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃    ADJ    ┃   EMOJI   ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
@@ -136,7 +136,7 @@ label= "SYM"                               ;
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp STAR    &kp SQT     &kp DQT       
                 &kp LG(N4)  &kp LG(N3)  &kp LG(N2)  &kp LG(N1)  &kp LG(N5)      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp C_MUTE 
     &trans      &kp RA(F18) &kp RA(F19) &trans      &trans      &trans          &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_PP   &trans         
-                                        &mo ADJ     &gif        &trans          &trans      &kp C_PP    &trans      
+                                        &mo ADJ     &kp LG(LC(SPACE)) &trans          &trans      &kp C_PP    &trans      
                         >;
                 };
 
