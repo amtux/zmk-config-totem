@@ -1,7 +1,0 @@
-include:
-  - board: seeeduino_xiao_ble
-    shield: totem_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="Totem RB"
-  - board: seeeduino_xiao_ble
-    shield: totem_right
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME="Totem RB"
