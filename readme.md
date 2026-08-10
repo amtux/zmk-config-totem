@@ -28,3 +28,15 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+
+## LOCAL BUILD
+
+With Docker Desktop or [Colima](https://github.com/abiosoft/colima) running, build the same firmware locally without committing your changes:
+
+```sh
+./scripts/build-local.sh        # both halves
+./scripts/build-local.sh left   # left half only
+./scripts/build-local.sh right  # right half only
+```
+
+The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by Git. The first build downloads the toolchain and ZMK dependencies; later builds reuse a Docker volume and are substantially faster.
