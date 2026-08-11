@@ -5,8 +5,8 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      # Pin the last known-good ZMK revision so local and CI builds are repeatable.
-      revision: 773892434931b74bdf54474b73c909779daa9471
+      # Pin the current ZMK revision so local and CI builds are repeatable.
+      revision: 268b1b1e82150460f00fd701bcd08583d5c75d29
       import: app/west.yml
   self:
     path: config

@@ -53,15 +53,17 @@ docker run --rm \
         for shield in ${SHIELDS}; do
             build_dir="/workspace/build/${shield}"
             west build \
+                --pristine=auto \
                 -s /workspace/zmk/app \
                 -d "${build_dir}" \
-                -b seeeduino_xiao_ble \
+                -b xiao_ble//zmk \
                 -- \
                 -DZMK_CONFIG=/workspace/config \
+                -DZMK_EXTRA_MODULES=/repo \
                 -DSHIELD="${shield}"
 
             cp "${build_dir}/zephyr/zmk.uf2" \
-                "/out/${shield}-seeeduino_xiao_ble-zmk.uf2"
+                "/out/${shield}-xiao_ble-zmk.uf2"
         done
     '
 
