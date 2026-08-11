@@ -40,3 +40,14 @@ With Docker Desktop or [Colima](https://github.com/abiosoft/colima) running, bui
 ```
 
 The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by Git. The first build downloads the toolchain and ZMK dependencies; later builds reuse a Docker volume and are substantially faster.
+
+## MAINTENANCE NOTES
+
+- The personal keymap is `config/totem.keymap`. Both GitHub Actions and `scripts/build-local.sh` explicitly build with `config/`, so the fallback keymap under `boards/shields/totem/` is not used.
+- The TOTEM shield is a Zephyr module declared by `zephyr/module.yml`; its hardware files live under `boards/shields/totem/`.
+- The XIAO BLE Hardware Model v2 target is `xiao_ble//zmk` (`seeeduino_xiao_ble` is obsolete).
+- ZMK is pinned to the same exact revision in `config/west.yml` and `.github/workflows/build.yml`. Update both together, then build both halves locally before committing.
+- Deep sleep is enabled in `config/totem.conf` after 30 minutes of inactivity.
+- Home-row mods use `tap-preferred`, a 170 ms tapping term, and 100 ms quick-tap/prior-idle terms. Positional filtering is not enabled.
+- The personal keymap has no combos or TVPaint-specific layers.
+- Builds may report `Deprecated symbol KSCAN is enabled`; this currently comes from ZMK's own GPIO matrix scanning stack and is not a TOTEM-specific migration issue.
