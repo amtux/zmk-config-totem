@@ -13,12 +13,12 @@ Visual reference for the active keymap in [`config/totem.keymap`](config/totem.k
 
 ```text
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃    ESC    ┃ BACKSPACE ┃    TAB    ┃   ┃   ENTER   ┃   SPACE   ┃   DELETE  ┃
-┃   MEDIA   ┃    NAV    ┃   MOUSE   ┃   ┃    SYM    ┃    NUM    ┃    FUN    ┃
+┃    ESC    ┃ BACKSPACE ┃    TAB    ┃   ┃   DELETE  ┃   SPACE   ┃   ENTER   ┃
+┃    NUM    ┃    NAV    ┃   MOUSE   ┃   ┃    FUN    ┃    SYM    ┃   MEDIA   ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
-Hold **Backspace/Nav + Enter/Sym** together to activate **Config**.
+Hold **Backspace/Nav + Space/Sym** together to activate **Config**.
 
 ## Base
 
@@ -37,8 +37,8 @@ The alphas remain QWERTY. For two-line home-row and thumb keys, tap the top acti
 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
                                     ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-                                    ┃    ESC    ┃ BACKSPACE ┃    TAB    ┃   ┃   ENTER   ┃   SPACE   ┃   DELETE  ┃
-                                    ┃   MEDIA   ┃    NAV    ┃   MOUSE   ┃   ┃    SYM    ┃    NUM    ┃    FUN    ┃
+                                    ┃    ESC    ┃ BACKSPACE ┃    TAB    ┃   ┃   DELETE  ┃   SPACE   ┃   ENTER   ┃
+                                    ┃    NUM    ┃    NAV    ┃   MOUSE   ┃   ┃    FUN    ┃    SYM    ┃   MEDIA   ┃
                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
@@ -59,8 +59,8 @@ Hold **Backspace/Nav**. Navigation and editing are on the right hand; modifiers 
 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
                                     ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-                                    ┃     ·     ┃     ·     ┃     ·     ┃   ┃   ENTER   ┃   SPACE   ┃   DELETE  ┃
-                                    ┃           ┃           ┃           ┃   ┃    SYM    ┃           ┃           ┃
+                                    ┃     ·     ┃     ·     ┃     ·     ┃   ┃   DELETE  ┃   SPACE   ┃   ENTER   ┃
+                                    ┃           ┃           ┃           ┃   ┃    FUN    ┃    SYM    ┃   MEDIA   ┃
                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
@@ -88,58 +88,53 @@ Hold **Tab/Mouse**. `MB1`, `MB2`, and `MB3` are left, right, and middle mouse bu
 
 ## Media
 
-Hold **Esc/Media**. Personal shortcuts are on the left; media, output, and Bluetooth controls are on the right.
+Hold **Enter/Media**. Media, output, and Bluetooth controls are on the left hand; screenshot remains on `Y` for now.
 
 ```text
             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            ┃ SCREENSHOT┃  EMAIL 1  ┃  EMAIL 2  ┃   EMOJI   ┃     ·     ┃   ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃
+            ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃   ┃ SCREENSHOT┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃
             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            ┃    GUI    ┃    ALT    ┃    CTRL   ┃   SHIFT   ┃     ·     ┃   ┃     ·     ┃  PREVIOUS ┃   VOL -   ┃   VOL +   ┃    NEXT   ┃
+            ┃  PREVIOUS ┃   VOL -   ┃   VOL +   ┃    NEXT   ┃     ·     ┃   ┃     ·     ┃   SHIFT   ┃    CTRL   ┃    ALT    ┃    GUI    ┃
             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃   ┃   OUTPUT  ┃    BT 0   ┃    BT 1   ┃    BT 2   ┃    BT 3   ┃    BT 4   ┃
+┃   OUTPUT  ┃    BT 0   ┃    BT 1   ┃    BT 2   ┃    BT 3   ┃    BT 4   ┃   ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃
 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
                                     ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-                                    ┃     ·     ┃     ·     ┃     ·     ┃   ┃    STOP   ┃ PLAY/PAUSE┃    MUTE   ┃
+                                    ┃    STOP   ┃ PLAY/PAUSE┃    MUTE   ┃   ┃     ·     ┃     ·     ┃     ·     ┃
                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
-Personal shortcut bindings:
-
-- Screenshot: `Cmd+Ctrl+Shift+4`
-- Email 1: `Right Alt+F18`
-- Email 2: `Right Alt+F19`
-- Emoji: `Cmd+Ctrl+Space`
+Screenshot sends `Cmd+Ctrl+Shift+4`.
 
 ## Num
 
-Hold **Space/Num**. These are ordinary number-row keycodes, not keypad keycodes.
+Hold **Esc/Num**. The right-hand number-pad arrangement uses ordinary number-row keycodes, not keypad keycodes.
 
 ```text
             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            ┃     [     ┃     7     ┃     8     ┃     9     ┃     ]     ┃   ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃
+            ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃   ┃     [     ┃     7     ┃     8     ┃     9     ┃     ]     ┃
             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            ┃     ;     ┃     4     ┃     5     ┃     6     ┃     =     ┃   ┃     ·     ┃   SHIFT   ┃    CTRL   ┃    ALT    ┃    GUI    ┃
+            ┃    GUI    ┃    ALT    ┃    CTRL   ┃   SHIFT   ┃     ·     ┃   ┃     ;     ┃     4     ┃     5     ┃     6     ┃     =     ┃
             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃
             ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-┃     ·     ┃     `     ┃     1     ┃     2     ┃     3     ┃     \     ┃   ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃
+┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃     ·     ┃   ┃     `     ┃     1     ┃     2     ┃     3     ┃     \     ┃     ·     ┃
 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
                                     ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-                                    ┃     .     ┃     0     ┃     -     ┃   ┃     ·     ┃     ·     ┃     ·     ┃
+                                    ┃     ·     ┃     ·     ┃     ·     ┃   ┃     .     ┃     0     ┃     -     ┃
                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 ```
 
 ## Sym
 
-Hold **Enter/Sym**. Shifted symbols mirror the Num layer where practical.
+Hold **Space/Sym**. Shifted symbols mirror the right-hand Num arrangement on the left hand where practical.
 
 ```text
             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -185,7 +180,7 @@ Hold **Delete/Fun**. Function keys follow the same number-pad shape as Num.
 
 ## Config
 
-Hold **Backspace/Nav + Enter/Sym**. Reset and bootloader require this two-thumb chord to reduce accidental activation.
+Hold **Backspace/Nav + Space/Sym**. Reset and bootloader require this two-thumb chord to reduce accidental activation.
 
 ```text
             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -207,5 +202,5 @@ Hold **Backspace/Nav + Enter/Sym**. Reset and bootloader require this two-thumb 
 
 ## Tap-hold timing
 
-- **Home-row mods:** balanced; 280 ms tap/hold term; 175 ms quick tap; 150 ms prior-idle guard. Opposite-hand keys trigger holds, while same-hand rolls favor taps.
-- **Thumb layer-taps:** tap-preferred; 200 ms tap/hold term; 125 ms quick tap; no prior-idle guard. Holding through the term activates the layer.
+- **Home-row mods:** Miryoku-style tap-preferred behavior with a 200 ms tap/hold term and no positional triggers, quick tap, or prior-idle guard. Hold a modifier through the term before pressing its target key.
+- **Thumb layer-taps:** tap-preferred; 200 ms tap/hold term; 250 ms quick tap; no prior-idle guard. Holding through the term activates the layer.
