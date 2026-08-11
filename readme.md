@@ -43,13 +43,15 @@ The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by
 
 ## KEYMAP
 
+See [`layouts.md`](layouts.md) for a visual reference of every layer.
+
 The alphas remain QWERTY, with apostrophe replacing semicolon as in Miryoku; semicolon is on the Num layer. The thumb keys are:
 
 ```text
-Esc/Media  Space/Nav  Tab/Mouse  |  Enter/Sym  Backspace/Num  Delete/Fun
+Esc/Media  Backspace/Nav  Tab/Mouse  |  Enter/Sym  Space/Num  Delete/Fun
 ```
 
-Each layer is operated primarily by the hand opposite its layer thumb. Hold Space/Nav and Enter/Sym together for the Config layer. The Media layer also contains screenshot, email, emoji, output, and direct Bluetooth-profile controls.
+Each layer is operated primarily by the hand opposite its layer thumb. Hold Backspace/Nav and Enter/Sym together for the Config layer. The Media layer also contains screenshot, email, emoji, output, and direct Bluetooth-profile controls.
 
 ## MAINTENANCE NOTES
 
@@ -59,6 +61,6 @@ Each layer is operated primarily by the hand opposite its layer thumb. Hold Spac
 - ZMK is pinned to the same exact revision in `config/west.yml` and `.github/workflows/build.yml`. Update both together, then build both halves locally before committing.
 - Deep sleep is enabled in `config/totem.conf` after 30 minutes of inactivity.
 - Home-row mods use separate positional left/right behaviors with balanced resolution, a 280 ms tapping term, and opposite-hand hold triggers. Thumb layer-taps use an independent 200 ms tap-preferred behavior.
-- The QWERTY keymap follows Miryoku's opposite-hand layer structure with dedicated Nav, Mouse, Media, Num, Sym, and Fun layers. Hold Space/Nav and Enter/Sym together to open Config.
+- The QWERTY keymap follows Miryoku's opposite-hand layer structure with dedicated Nav, Mouse, Media, Num, Sym, and Fun layers. Hold Backspace/Nav and Enter/Sym together to open Config.
 - The personal keymap has no combos or TVPaint-specific layers.
 - Builds may report `Deprecated symbol KSCAN is enabled`; this currently comes from ZMK's own GPIO matrix scanning stack and is not a TOTEM-specific migration issue.

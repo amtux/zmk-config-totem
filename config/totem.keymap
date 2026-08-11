@@ -68,7 +68,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        // Hold Space/Nav and Enter/Sym together for hardware configuration.
+        // Hold Backspace/Nav and Enter/Sym together for hardware configuration.
         config_layer {
             if-layers = <NAV SYM>;
             then-layer = <CONFIG>;
@@ -84,7 +84,7 @@
                 &kp Q          &kp W          &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G               &kp H           &hmr RSHFT J    &hmr RCTRL K    &hmr RALT L     &hmr RGUI SQT
                 &kp GRAVE      &kp Z          &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp EQUAL
-                                                &thumb_lt MEDIA ESC  &thumb_lt NAV SPACE  &thumb_lt MOUSE TAB    &thumb_lt SYM RET  &thumb_lt NUM BSPC  &thumb_lt FUN DEL
+                                                &thumb_lt MEDIA ESC  &thumb_lt NAV BSPC  &thumb_lt MOUSE TAB    &thumb_lt SYM RET  &thumb_lt NUM SPACE  &thumb_lt FUN DEL
             >;
         };
 
@@ -92,9 +92,9 @@
             display-name = "NAV";
             bindings = <
                 &kp LG(N4)     &kp LG(N3)     &kp LG(N2)      &kp LG(N1)      &none               &kp LG(LS(Z))    &kp LG(V)       &kp LG(C)       &kp LG(X)       &kp LG(Z)
-                &kp LGUI       &kp LALT       &kp LCTRL       &kp LSHFT       &none               &caps_word      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
-                &kp SSHOT      &none          &none           &none           &none           &none               &kp INS         &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &none
-                                                &none                &none                &none                  &thumb_lt SYM RET  &kp BSPC            &kp DEL
+                &kp LGUI       &kp LALT       &kp LCTRL       &kp LSHFT       &none               &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &caps_word
+                &kp SSHOT      &none          &none           &none           &none           &none               &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &kp INS         &none
+                                                &none                &none                &none                  &thumb_lt SYM RET  &kp SPACE           &kp DEL
             >;
         };
 
@@ -102,8 +102,8 @@
             display-name = "MOUSE";
             bindings = <
                 &none          &none          &none           &none           &none               &kp LG(LS(Z))    &kp LG(V)       &kp LG(C)       &kp LG(X)       &kp LG(Z)
-                &kp LGUI       &kp LALT       &kp LCTRL       &kp LSHFT       &none               &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
-                &none          &none          &none           &none           &none           &none               &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT &none
+                &kp LGUI       &kp LALT       &kp LCTRL       &kp LSHFT       &none               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &none
+                &none          &none          &none           &none           &none           &none               &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT &none           &none
                                                 &none                &none                &none                  &mkp MB2           &mkp MB1            &mkp MB3
             >;
         };
