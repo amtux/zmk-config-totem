@@ -41,6 +41,16 @@ With Docker Desktop or [Colima](https://github.com/abiosoft/colima) running, bui
 
 The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by Git. The first build downloads the toolchain and ZMK dependencies; later builds reuse a Docker volume and are substantially faster.
 
+## KEYMAP
+
+The alphas remain QWERTY, with apostrophe replacing semicolon as in Miryoku; semicolon is on the Num layer. The thumb keys are:
+
+```text
+Esc/Media  Space/Nav  Tab/Mouse  |  Enter/Sym  Backspace/Num  Delete/Fun
+```
+
+Each layer is operated primarily by the hand opposite its layer thumb. Hold Space/Nav and Enter/Sym together for the Config layer. The Media layer also contains screenshot, email, emoji, output, and direct Bluetooth-profile controls.
+
 ## MAINTENANCE NOTES
 
 - The personal keymap is `config/totem.keymap`. Both GitHub Actions and `scripts/build-local.sh` explicitly build with `config/`, so the fallback keymap under `boards/shields/totem/` is not used.
@@ -48,6 +58,7 @@ The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by
 - The XIAO BLE Hardware Model v2 target is `xiao_ble//zmk` (`seeeduino_xiao_ble` is obsolete).
 - ZMK is pinned to the same exact revision in `config/west.yml` and `.github/workflows/build.yml`. Update both together, then build both halves locally before committing.
 - Deep sleep is enabled in `config/totem.conf` after 30 minutes of inactivity.
-- Home-row mods use `tap-preferred`, a 170 ms tapping term, and 100 ms quick-tap/prior-idle terms. Positional filtering is not enabled.
+- Home-row mods use separate positional left/right behaviors with balanced resolution, a 280 ms tapping term, and opposite-hand hold triggers. Thumb layer-taps use an independent 200 ms tap-preferred behavior.
+- The QWERTY keymap follows Miryoku's opposite-hand layer structure with dedicated Nav, Mouse, Media, Num, Sym, and Fun layers. Hold Space/Nav and Enter/Sym together to open Config.
 - The personal keymap has no combos or TVPaint-specific layers.
 - Builds may report `Deprecated symbol KSCAN is enabled`; this currently comes from ZMK's own GPIO matrix scanning stack and is not a TOTEM-specific migration issue.
