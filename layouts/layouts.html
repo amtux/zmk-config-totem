@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Totem Keymap Layouts</title>
+  <style>
+
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">@page {
+size: portrait;
+margin: 8mm;
+}
+body {
+color: #000;
+font: 9pt -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+max-width: none;
+}
+h1 {
+margin: 0 0 0.5rem;
+}
+h2 {
+margin: 0.75rem 0 0.25rem;
+break-after: avoid;
+}
+section.level2 {
+break-inside: avoid-page;
+page-break-inside: avoid;
+}
+p,
+ul {
+margin: 0.25rem 0 0.5rem;
+}
+pre {
+font: 10pt/1.1 Menlo, Monaco, "Courier New", monospace;
+white-space: pre;
+break-inside: avoid;
+overflow: visible;
+margin: 0.25rem 0 0.5rem;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<section id="totem-keymap-layouts" class="level1">
+<h1>Totem Keymap Layouts</h1>
+<p>Visual reference for the active keymap in <a href="../config/totem.keymap"><code>config/totem.keymap</code></a>. Keys
+are shown from the left outer edge to the right outer edge.</p>
+<section id="legend" class="level2">
+<h2>Legend</h2>
+<ul>
+<li>For two-line keys, the <strong>top line is tap</strong> and the
+<strong>bottom line is hold</strong>.</li>
+<li><code>GUI</code>, <code>ALT</code>, <code>CTRL</code>, and
+<code>SHIFT</code> are modifiers.</li>
+<li><code>·</code> is an intentionally disabled key.</li>
+<li>Compact labels include <code>BKSP</code> (Backspace),
+<code>CAPSW</code> (Caps Word), <code>MSE←</code>/<code>SCR←</code>
+(mouse/scroll), <code>SHOT</code> (Screenshot),
+<code>BRI+</code>/<code>BRI-</code> (display brightness),
+<code>PLY/P</code> (Play/Pause), and <code>BOOT</code>
+(Bootloader).</li>
+<li>The wider bottom row includes Totem’s extra outer pinkie key on each
+side.</li>
+</ul>
+</section>
+<section id="layer-access" class="level2">
+<h2>Layer access</h2>
+<pre class="text"><code>┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+┃ ESC ┃ BKSP┃ TAB ┃   ┃ DEL ┃SPACE┃ENTER┃
+┃ NUM ┃ NAV ┃ FUN ┃   ┃MOUSE┃ SYM ┃MEDIA┃
+┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+<p>Hold <strong>Backspace/Nav + Space/Sym</strong> together to activate
+<strong>Config</strong>.</p>
+</section>
+<section id="base" class="level2">
+<h2>Base</h2>
+<p>The alphas remain QWERTY. For two-line home-row and thumb keys, tap
+the top action or hold the bottom action.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃  Q  ┃  W  ┃  E  ┃  R  ┃  T  ┃   ┃  Y  ┃  U  ┃  I  ┃  O  ┃  P  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃  A  ┃  S  ┃  D  ┃  F  ┃  G  ┃   ┃  H  ┃  J  ┃  K  ┃  L  ┃  &#39;  ┃
+      ┃ GUI ┃ ALT ┃ CTRL┃SHIFT┃     ┃   ┃     ┃SHIFT┃ CTRL┃ ALT ┃ GUI ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃  `  ┃  Z  ┃  X  ┃  C  ┃  V  ┃  B  ┃   ┃  N  ┃  M  ┃  ,  ┃  .  ┃  /  ┃  =  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃ ESC ┃ BKSP┃ TAB ┃   ┃ DEL ┃SPACE┃ENTER┃
+                  ┃ NUM ┃ NAV ┃ FUN ┃   ┃MOUSE┃ SYM ┃MEDIA┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+</section>
+<section id="nav" class="level2">
+<h2>Nav</h2>
+<p>Hold <strong>Backspace/Nav</strong>. Navigation and editing are on
+the right hand; modifiers remain on the left. Movement follows Vim’s
+physical <code>H J K L</code> positions.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃CMD+4┃CMD+3┃CMD+2┃CMD+1┃  ·  ┃   ┃ REDO┃PASTE┃ COPY┃ CUT ┃ UNDO┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃ GUI ┃ ALT ┃ CTRL┃SHIFT┃  ·  ┃   ┃ LEFT┃ DOWN┃  UP ┃RIGHT┃CAPSW┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃ SHOT┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃   ┃ HOME┃ PGDN┃PG UP┃ END ┃ INS ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃  ·  ┃  ·  ┃  ·  ┃   ┃ DEL ┃SPACE┃ENTER┃
+                  ┃     ┃     ┃     ┃   ┃MOUSE┃ SYM ┃MEDIA┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+</section>
+<section id="mouse" class="level2">
+<h2>Mouse</h2>
+<p>Hold <strong>Delete/Mouse</strong>. Movement uses a left-hand WASD
+arrangement. <code>MB1</code>, <code>MB2</code>, and <code>MB3</code>
+are left, right, and middle mouse buttons.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃  ·  ┃ MSE↑┃  ·  ┃  ·  ┃  ·  ┃   ┃ REDO┃PASTE┃ COPY┃ CUT ┃ UNDO┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃ MSE←┃ MSE↓┃ MSE→┃  ·  ┃  ·  ┃   ┃  ·  ┃SHIFT┃ CTRL┃ ALT ┃ GUI ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃  ·  ┃ SCR←┃ SCR↓┃ SCR↑┃ SCR→┃  ·  ┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃ MB3 ┃ MB1 ┃ MB2 ┃   ┃  ·  ┃  ·  ┃  ·  ┃
+                  ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+</section>
+<section id="media" class="level2">
+<h2>Media</h2>
+<p>Hold <strong>Enter/Media</strong>. Media, output, and Bluetooth
+controls are on the left hand; screenshot remains on <code>Y</code> for
+now.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃   ┃ SHOT┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃ PREV┃VOL -┃VOL +┃ NEXT┃  ·  ┃   ┃  ·  ┃SHIFT┃ CTRL┃ ALT ┃ GUI ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃ OUT ┃ BT 0┃ BT 1┃ BT 2┃ BT 3┃ BT 4┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃ STOP┃PLY/P┃ MUTE┃   ┃  ·  ┃  ·  ┃  ·  ┃
+                  ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+<p>Screenshot sends <code>Cmd+Ctrl+Shift+4</code>.</p>
+</section>
+<section id="num" class="level2">
+<h2>Num</h2>
+<p>Hold <strong>Esc/Num</strong>. The right-hand number-pad arrangement
+uses ordinary number-row keycodes, not keypad keycodes.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃   ┃  [  ┃  7  ┃  8  ┃  9  ┃  ]  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃ GUI ┃ ALT ┃ CTRL┃SHIFT┃  ·  ┃   ┃  ;  ┃  4  ┃  5  ┃  6  ┃  =  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃   ┃  `  ┃  1  ┃  2  ┃  3  ┃  \  ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃  ·  ┃  ·  ┃  ·  ┃   ┃  .  ┃  0  ┃  -  ┃
+                  ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+</section>
+<section id="sym" class="level2">
+<h2>Sym</h2>
+<p>Hold <strong>Space/Sym</strong>. Shifted symbols mirror the
+right-hand Num arrangement on the left hand where practical.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃  {  ┃  &amp;  ┃  *  ┃  (  ┃  }  ┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃  :  ┃  $  ┃  %  ┃  ^  ┃  +  ┃   ┃  ·  ┃SHIFT┃ CTRL┃ ALT ┃ GUI ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃  ·  ┃  ~  ┃  !  ┃  @  ┃  #  ┃  |  ┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃  (  ┃  )  ┃  _  ┃   ┃  ·  ┃  ·  ┃  ·  ┃
+                  ┃     ┃ NAV ┃     ┃   ┃     ┃     ┃     ┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+<p>Holding the <code>)/NAV</code> thumb key while Sym is active also
+activates Nav, producing the Config chord; tapping it produces
+<code>)</code>.</p>
+</section>
+<section id="fun" class="level2">
+<h2>Fun</h2>
+<p>Hold <strong>Tab/Fun</strong>. Function keys follow the same
+right-hand number-pad shape as Num.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃   ┃ BRI+┃  F7 ┃  F8 ┃  F9 ┃ F12 ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃ GUI ┃ ALT ┃ CTRL┃SHIFT┃  ·  ┃   ┃ BRI-┃  F4 ┃  F5 ┃  F6 ┃ F11 ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃   ┃PAUSE┃  F1 ┃  F2 ┃  F3 ┃ F10 ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃  ·  ┃  ·  ┃  ·  ┃   ┃ TAB ┃SPACE┃  ·  ┃
+                  ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+</section>
+<section id="config" class="level2">
+<h2>Config</h2>
+<p>Hold <strong>Backspace/Nav + Space/Sym</strong>. Reset and bootloader
+require this two-thumb chord to reduce accidental activation.</p>
+<pre class="text"><code>      ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+      ┃RESET┃ BOOT┃ OUT ┃ USB ┃ BLE ┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫   ┣━━━━━╋━━━━━╋━━━━━╋━━━━━╋━━━━━┫
+      ┃ BT 0┃ BT 1┃ BT 2┃ BT 3┃ BT 4┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+      ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃
+      ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┳━━━━━┓
+┃  ·  ┃BTCLR┃BTPRV┃BTNXT┃  ·  ┃  ·  ┃   ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃  ·  ┃
+┃     ┃     ┃     ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃     ┃     ┃     ┃
+┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┻━━━━━┛
+                  ┏━━━━━┳━━━━━┳━━━━━┓   ┏━━━━━┳━━━━━┳━━━━━┓
+                  ┃  ·  ┃  ·  ┃  ·  ┃   ┃  ·  ┃  ·  ┃  ·  ┃
+                  ┃     ┃     ┃     ┃   ┃     ┃     ┃     ┃
+                  ┗━━━━━┻━━━━━┻━━━━━┛   ┗━━━━━┻━━━━━┻━━━━━┛</code></pre>
+</section>
+<section id="tap-hold-timing" class="level2">
+<h2>Tap-hold timing</h2>
+<ul>
+<li><strong>Home-row mods:</strong> Miryoku-style tap-preferred behavior
+with a 200 ms tap/hold term and no positional triggers, quick tap, or
+prior-idle guard. Hold a modifier through the term before pressing its
+target key.</li>
+<li><strong>Thumb layer-taps:</strong> tap-preferred; 200 ms tap/hold
+term; 250 ms quick tap; no prior-idle guard. Holding through the term
+activates the layer.</li>
+</ul>
+</section>
+</section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@page {
+  size: portrait;
+  margin: 8mm;
+}
+
+body {
+  color: #000;
+  font: 9pt -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: none;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  margin: 0.75rem 0 0.25rem;
+  break-after: avoid;
+}
+
+section.level2 {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+p,
+ul {
+  margin: 0.25rem 0 0.5rem;
+}
+
+pre {
+  font: 10pt/1.1 Menlo, Monaco, "Courier New", monospace;
+  white-space: pre;
+  break-inside: avoid;
+  overflow: visible;
+  margin: 0.25rem 0 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -43,15 +43,15 @@ The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by
 
 ## KEYMAP
 
-See [`layouts.md`](layouts.md) for a visual reference of every layer.
+See [`layouts/layouts.md`](layouts/layouts.md) for a visual reference of every layer, or open the [print-ready portrait HTML](layouts/layouts.html). After layout changes, run `./layouts/generate.sh` to regenerate and open the HTML for review.
 
 The alphas remain QWERTY, with apostrophe replacing semicolon as in Miryoku; semicolon is on the Num layer. The thumb keys are:
 
 ```text
-Esc/Num  Backspace/Nav  Tab/Mouse  |  Delete/Fun  Space/Sym  Enter/Media
+Esc/Num  Backspace/Nav  Tab/Fun  |  Delete/Mouse  Space/Sym  Enter/Media
 ```
 
-Each layer is operated primarily by the hand opposite its layer thumb. Num uses a familiar right-hand number-pad arrangement. Hold Backspace/Nav and Space/Sym together for the Config layer. The Media layer also contains screenshot, output, and direct Bluetooth-profile controls.
+Each layer is operated primarily by the hand opposite its layer thumb. Num and Fun use familiar right-hand number-pad arrangements, while Mouse uses left-hand WASD movement. Hold Backspace/Nav and Space/Sym together for the Config layer. The Media layer also contains screenshot, output, and direct Bluetooth-profile controls.
 
 ## MAINTENANCE NOTES
 
