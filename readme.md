@@ -45,13 +45,13 @@ The UF2 files and `firmware.zip` are written to `firmware/`, which is ignored by
 
 See [`layouts/layouts.md`](layouts/layouts.md) for a visual reference of every layer, or open the [print-ready portrait HTML](layouts/layouts.html). After layout changes, run `./layouts/generate.sh` to regenerate and open the HTML for review.
 
-The alphas remain QWERTY, with apostrophe replacing semicolon as in Miryoku; semicolon is on the Num layer. The thumb keys are:
+The alphas remain QWERTY, with semicolon in its standard home-row position. Apostrophe uses Totem's extra right key, while grave uses the extra left key. The thumb keys are:
 
 ```text
-Esc/Num  Backspace/Nav  Tab/Fun  |  Delete/Mouse  Space/Sym  Enter/Media
+Esc/Nav  Backspace/Num  Tab/Fun  |  Delete/Mouse  Space/Sym  Enter/Media
 ```
 
-Each layer is operated primarily by the hand opposite its layer thumb. Num and Fun use familiar right-hand number-pad arrangements, while Mouse uses left-hand WASD movement. Hold Backspace/Nav and Space/Sym together for the Config layer. The Media layer also contains screenshot, output, and direct Bluetooth-profile controls.
+Each layer is operated primarily by the hand opposite its layer thumb. Num uses a calculator-style right-hand number pad, Fun uses a right-hand function-key pad, and Mouse uses left-hand ESDF movement. Sym groups bracket pairs vertically on `Q/T`, `A/G`, and `Z/B`, with `\` and `|` adjacent on `E/R`. Hold Esc/Nav and Space/Sym together for the Config layer. The Media layer also contains macOS screenshot and emoji shortcuts. Output and Bluetooth-profile controls remain on Config.
 
 ## MAINTENANCE NOTES
 
@@ -61,6 +61,6 @@ Each layer is operated primarily by the hand opposite its layer thumb. Num and F
 - ZMK is pinned to the same exact revision in `config/west.yml` and `.github/workflows/build.yml`. Update both together, then build both halves locally before committing.
 - Deep sleep is enabled in `config/totem.conf` after 30 minutes of inactivity.
 - Home-row mods match Miryoku's 200 ms tap-preferred behavior, without positional triggers or prior-idle guards. Thumb layer-taps use an independent 200 ms tap-preferred behavior with a 250 ms quick-tap window.
-- The QWERTY keymap follows Miryoku's opposite-hand layer structure with dedicated Nav, Mouse, Media, Num, Sym, and Fun layers. Hold Backspace/Nav and Space/Sym together to open Config.
+- The QWERTY keymap follows Miryoku's opposite-hand layer structure with dedicated Nav, Mouse, Media, Num, Sym, and Fun layers. Hold Esc/Nav and Space/Sym together to open Config.
 - The personal keymap has no combos or TVPaint-specific layers.
 - Builds may report `Deprecated symbol KSCAN is enabled`; this currently comes from ZMK's own GPIO matrix scanning stack and is not a TOTEM-specific migration issue.

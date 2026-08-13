@@ -29,7 +29,7 @@ ul {
 }
 
 pre {
-  font: 10pt/1.1 Menlo, Monaco, "Courier New", monospace;
+  font: 10pt/1.05 Menlo, Monaco, "Courier New", monospace;
   white-space: pre;
   break-inside: avoid;
   overflow: visible;
